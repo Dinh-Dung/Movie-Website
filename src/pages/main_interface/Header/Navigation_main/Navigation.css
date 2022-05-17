@@ -1,0 +1,15 @@
+.Header_img{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.Header_img{
+    margin: 10px 40px;
+}
+.language{
+    margin-right: 30px;
+}
+.language i{
+    font-size: 15px;
+    margin-right: 5px;
+}

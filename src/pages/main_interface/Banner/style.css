@@ -1,0 +1,8 @@
+.Banner{
+    position: relative;
+    width: 100%;
+}
+.Banner .container{
+    position: absolute;
+    width: 100%;
+}
