@@ -4,9 +4,9 @@ import './TitleList.css'
 
 
 export default function TitleList() {
-
+//chua logic de truy xuat ket qua tu API   ,o day se fetch api
   return (
-    //chua logic de truy xuat ket qua tu API   ,o day se fetch api
+    
     <div className="TitleList">
         <div className="Title">
             <h1>props.title</h1>
