@@ -10,13 +10,12 @@
 .header{
     position: relative;
     width: 100%;
-
-
 }
-.Banner{
+.banner{
     position: absolute;
     z-index: 4;
-
+    text-align: center;
+    color: black;
 }
 .language{
     margin-right: 30px;
