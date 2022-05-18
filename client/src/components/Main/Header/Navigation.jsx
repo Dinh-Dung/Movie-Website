@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../../../assets/Logo'
 import './Navigation.css'
-import Background from '../../../images/anh_nen.jpg'
+
 
 
 export default function MainHeader() {
@@ -26,7 +26,6 @@ export default function MainHeader() {
           </nav>
         </div>
       </div>
-
     </div>
   );
 
