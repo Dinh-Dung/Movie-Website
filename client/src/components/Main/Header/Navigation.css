@@ -1,0 +1,26 @@
+.header_img{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    transform: none;
+}
+.header_nav{
+    margin: 10px 40px;
+}
+.header{
+    position: relative;
+    width: 100%;
+}
+.banner{
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+    color: black;
+}
+.language{
+    margin-right: 30px;
+}
+.language i{
+    font-size: 15px;
+    margin-right: 5px;
+}

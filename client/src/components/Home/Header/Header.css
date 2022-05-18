@@ -11,20 +11,22 @@ body{
     margin-right: 25px;
   }
   .navbar-light .navbar-nav .nav-link:hover{
-    background-color: brown;
+    color: brown !important;
     border-radius: 10px;
   }
   .dropdown-menu .dropdown-item:hover{
-    background-color: brown;
+    color: brown;
     border-radius: 10px;
   }
+  .menu{
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+  }
   .Search {
-    margin-top: 17px;
-    width: 300px;
+    margin-top: 5px;
+    width: 600px;
    }
- #form{
-     width: 400px;
- }
    .Search input {
      font-family: "Lato", sans-serif;
      font-weight: 300;
@@ -45,11 +47,13 @@ body{
      -webkit-transition: border .25s ease, width .125s ease .125s;
      transition: border .25s ease, width .125s ease .125s;
    }
-   .Search input:focus {
+   /* .Search input:focus {
      border: 2px solid #e50914;
      width: 100%;
      background-color: #ccc8c8;
-   }
+   } */
    .Search input::placeholder{
      color: #d0767a;
+   }
+   .User{
    }
