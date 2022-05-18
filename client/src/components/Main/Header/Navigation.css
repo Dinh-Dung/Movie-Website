@@ -7,16 +7,7 @@
 .header_nav{
     margin: 10px 40px;
 }
-.header{
-    position: relative;
-    width: 100%;
-}
-.banner{
-    position: absolute;
-    z-index: 4;
-    text-align: center;
-    color: black;
-}
+
 .language{
     margin-right: 30px;
 }
