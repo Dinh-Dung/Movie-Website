@@ -1,8 +1,11 @@
 import React from 'react'
 import Logo from '../../../assets/Logo/Logo';
 import './Navigation.css'
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 5e05eb8233571f2dde0c2d191f315bc0b0ab576a
 
 export default function MainHeader() {
   return (
