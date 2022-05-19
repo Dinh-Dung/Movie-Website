@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../../assets/Logo/Logo'
+import Logo from '../../assets/Logo/Logo'
 import './Header.css'
 import UserProfile from './UserProfile/UserProfile'
 import { useState,useEffect } from 'react'

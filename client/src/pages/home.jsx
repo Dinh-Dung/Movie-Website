@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Header from '../components/Home/Header/header'
+import Header from '../components/Header/Header'
 import Banner from '../components/Home/Banner/Banner'
 import TitleList from '../components/Home/TitleList/TitleList'
 import Footer from '../components/Footer/Footer'
