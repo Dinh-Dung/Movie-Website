@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     color: white;
+    position: relative;
 }
 .banner-text h2{
     font-size: 50px;
@@ -19,13 +20,28 @@
     font-size: 24px;
     margin: 10px 0;
 }
+.form-group{
+    display: flex;
+}
 .form-group input{
-    font-size: 30px;
+    font-size: 25px;
 }
 .banner-text label{
     font-size: 10px;
 }
 .line {
-    border: 4px solid grey;
+    border: 8px solid #222;
     width: 100%;
+}
+.banner-img-color  .banner-img-gradient{
+
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+}
+.banner-img-color .banner-img-gradient{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }

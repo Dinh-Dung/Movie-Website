@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer/Footer'
 import MainBanner from '../components/Main/banner/banner'
 import MainContent from '../components/Main/content/content'
 
@@ -12,7 +13,7 @@ export default function IndexPage() {
       <div className="Main-all">
       <MainContent />
     </div>
-
+    <Footer />
     </>
   )
 }

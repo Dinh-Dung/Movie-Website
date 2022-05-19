@@ -1,7 +1,7 @@
 
 .content_text {
     color: white;
-    margin: 90px 0;
+    margin: 170px 0px 170px 20px;
     line-height: 60px;
 }
 .content_text h1{
@@ -21,6 +21,28 @@
     font-size: 20px;
 }
 .content_img img{
-    width: 80vh;
+    width: 75vh;
     margin: 50px 0;
+}
+.line {
+    border: 4px solid #222;
+    width: 100%;
+}
+.content_img_card{
+    position: relative;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+}
+
+.content_video iframe{
+    
+    width: 100%;
+    height: 100%;
+    max-width: 84%;
+    max-height: 45%;
+    position: absolute;
+    top: 46%;
+    left: 57%;
+    transform: translate(-50%, -50%);
 }
