@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Header from '../components/Header/Header'
-import Banner from '../components/Home/Banner/Banner'
-import TitleList from '../components/Home/TitleList/TitleList'
+import Banner from '../components/Browse/Banner/Banner'
+import TitleList from '../components/Browse/TitleList/TitleList'
 import Footer from '../components/Footer/Footer'
 import '../styles/index.css'
 export default function homePage() {
@@ -12,6 +12,8 @@ export default function homePage() {
         <Header/>
       </header>  
       <Banner/>
+      <TitleList/>
+      <TitleList/>
       <TitleList/>
       <Footer/>
     </div>
