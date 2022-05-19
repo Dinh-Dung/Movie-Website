@@ -5,31 +5,29 @@ import UserProfile from './UserProfile/UserProfile'
 import { useState,useEffect } from 'react'
 export default function Header() {
 
-      const [search,setSearch] = useState('')
-
-      const handleChange = (e)=>{
-        const value = e.target.value;
-        setSearch(value)
-      }
-      const handleSubmitChange = (e)=>{
-        e.preventdefault()
-    
-      }
-      // console.log(search);
+     
 
 
   const [navSize, setnavSize] = useState("");
-  const [navColor, setnavColor] = useState("transparent");
-  const [navColorText,setColorText] = useState("#1b0a0a")
- 
+  const [navColorText,setColorText] = useState("#1b0a0a") 
+  
+  const [searchValue,setsearchValue] = useState('')
+
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("transparent") : setnavColor("transparent");
-    window.scrollY > 10 ? setnavSize("6rem") : setnavSize("3rem");
+    window.scrollY > 10 ? setnavSize("4rem") : setnavSize("2rem");
     window.scrollY > 10 ? setColorText("white"): setColorText("#1b0a0a")
-    
   };
+
+    const handleClear = ()=>{
+      setsearchValue('')
+    }
+    const handleSubmitChange = (e)=>{
+      e.preventdefault()
+    }
+
+
+
   useEffect(() => {
-     //lang nghe su kien scroll khi ma dc loadlai
     window.addEventListener("scroll", listenScrollEvent);
     return () => {
       window.removeEventListener("scroll", listenScrollEvent);
@@ -37,7 +35,7 @@ export default function Header() {
   }, []);
 
   return (
-        <div className="Navigation" style={{height:navSize,backgroundColor:navColor,transition:"all 1s"}}>
+        <div className="Navigation"  style={{height:navSize,transition:"all 1s"}}>
         <nav className="navbar navbar-expand-lg navbar-light " >
         <a className="navbar-brand" href="#undefine"><Logo/></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,16 +64,32 @@ export default function Header() {
               <a className="nav-link " href="#undefine" style={{color:navColorText}}>Hoạt Hình</a>
             </li>
           </ul>
+
           <div className="Search" >
-        <form action='' className="form-inline my-2 my-lg-0" onSubmit={e=>{handleSubmitChange(e)}}>
-         <input type="search"
-          name='text'
-          onChange={e=>{handleChange(e)}}
-          placeholder='Search for a title...'
-          
-          value={search}
+          <form action='' className="form-inline my-2 my-lg-0"  onSubmit={e=>{handleSubmitChange(e)}}>
+          <input
+            type="search"
+            name='text'
+            onChange={(e)=>setsearchValue(e.target.value)}
+            value={searchValue}
+            placeholder='Search for a title...'
+            
           />
-      </form>
+          {/* render co dieu kien */}
+          { !!searchValue && (
+            <button className="clear" style={{color:navColorText}} onClick={handleClear}>
+              <i className="bi bi-x-circle-fill"></i>
+            </button>
+          )}
+          {
+            // loading 
+          }
+
+          <button className="search-btn"  style={{color:navColorText}}>
+          <i className="bi bi-search"></i>
+          </button>
+
+          </form>
         </div>
         <div className="User">
             <UserProfile/>

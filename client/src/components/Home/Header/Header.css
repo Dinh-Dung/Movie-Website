@@ -14,6 +14,14 @@ body{
     color: brown !important;
     border-radius: 10px;
   }
+  .dropdown-menu{
+    background-color: rgb(147, 133, 133);
+    border: none;
+    color: wheat;
+  }
+  /* .dropdown-item{
+    color: white;
+  } */
   .dropdown-menu .dropdown-item:hover{
     color: brown;
     border-radius: 10px;
@@ -24,9 +32,21 @@ body{
     width: 80vw;
   }
   .Search {
+    position: relative;
     margin-top: 5px;
     width: 600px;
    }
+   .Search::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 40%;
+    width: 1px;
+    height: 30px;
+    background-color: rgba(32, 29, 29, 0.12);
+    margin-left: 15px;
+  } 
+  
    .Search input {
      font-family: "Lato", sans-serif;
      font-weight: 300;
@@ -41,19 +61,41 @@ body{
      border: 0;
      border: 2px solid rgba(245, 245, 241, 0.1);
      outline: none;
-     border-radius: 37px;
+     border-radius: 37px; 
      padding: 0 10px;
      pointer-events: all;
      -webkit-transition: border .25s ease, width .125s ease .125s;
      transition: border .25s ease, width .125s ease .125s;
    }
-   /* .Search input:focus {
+   .Search input:focus {
      border: 2px solid #e50914;
-     width: 100%;
-     background-color: #ccc8c8;
-   } */
+     /* background-color: #dbd8d8; */
+   }
    .Search input::placeholder{
-     color: #d0767a;
+     color: #292324;
    }
-   .User{
+ .Search button.clear{
+  position: absolute;
+  top: 0%;
+  left: 36%;
+  margin-top: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+   .Search button.clear:hover{
+     color: red !important;
    }
+.Search button.search-btn{
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  margin-top: 5px;
+  margin-left: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.Search button.search-btn:hover{
+  color: red !important;
+}

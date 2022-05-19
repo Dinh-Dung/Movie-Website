@@ -1,13 +1,8 @@
 import React from 'react'
 import Logo from '../../../assets/Logo/Logo';
 import './Navigation.css'
-<<<<<<< HEAD
-// // import Background from '../../../images/anh_nen.jpg'
-// import Background from '../../../../public/images/anh_nen.jpg'
-=======
 
 
->>>>>>> f91384b0393d58a483e49c0fc06f2c305515560c
 
 export default function MainHeader() {
   return (

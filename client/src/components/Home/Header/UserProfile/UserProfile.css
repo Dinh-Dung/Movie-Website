@@ -35,6 +35,9 @@
     font-weight: 300;
     height: 44px;
   }
+  .UserProfile .User .name:hover{
+    color:#e50914;
+  }
   .UserProfile .User:hover {
     cursor: pointer;
   }
