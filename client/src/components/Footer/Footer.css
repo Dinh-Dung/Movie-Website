@@ -33,7 +33,7 @@
     margin-top: 10px;
 }
 .sub_links ul li a{
-    color: wheat;
+    color: rgb(95, 95, 95);
     font-size: 16px;
     text-decoration: none;
 }
@@ -49,6 +49,7 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
 
 /* @media(max-width: 700px) {
     .sub-links ul {
