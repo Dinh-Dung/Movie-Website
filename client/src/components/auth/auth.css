@@ -1,0 +1,57 @@
+.bg_img{
+    position: relative;
+    width: 100%;
+}
+.banner_login{
+    height: 100vh; 
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+
+.banner_login h1{
+    font-size: 35px ;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.banner_login button{
+    width: 100%;
+    background: #E50914;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+.hybrid-login-form{
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 100%;
+}
+.login_form{
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 55vh;
+    margin: 0 0 95px;
+    padding: 60px 68px 90px;
+    border-radius: 5px;
+}
+.login_form .form-group input{
+    background: #333333;
+    font-size: 18px;
+    color: white;
+    padding: 10px 8px;
+}
+.login_form input::placeholder {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+.login_form input[type="email"]:focus,
+.login_form input[type="password"]:focus{
+    background: #333333;
+}

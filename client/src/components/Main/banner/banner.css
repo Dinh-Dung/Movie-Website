@@ -1,9 +1,7 @@
 .banner{
     position: relative;
     width: 100%;
-  
 }
-
 .banner-text {
     height: 80vh; 
     display: flex;
@@ -24,7 +22,8 @@
     display: flex;
 }
 .form-group input{
-    font-size: 25px;
+    font-size: 16px;
+    padding: 12px 8px;
 }
 .banner-text label{
     font-size: 10px;
@@ -34,7 +33,6 @@
     width: 100%;
 }
 .banner-img-color  .banner-img-gradient{
-
     background: rgba(0,0,0,.4);
     background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
 }

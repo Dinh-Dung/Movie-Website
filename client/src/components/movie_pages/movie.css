@@ -1,0 +1,114 @@
+.movie_page{
+    margin: 150px 0;
+    background-color: #081b27;
+    color: rgb(255, 255, 255);
+}
+.movie_page_text  h1{
+    max-width: 95%;
+    margin-bottom: 15px;
+    font-size: 56px;
+    line-height: 70px;
+
+}
+.movie_page_text h2{
+    max-width: 95%;
+    margin-bottom: 20px;
+    font-size: 40px;
+
+}
+.movie_page_img{
+    margin-top: 50px;
+}
+.movie_page_img img{
+    border-radius: 10px;
+    width: 80%;
+}
+.movie_icon {
+    display: flex;
+    margin: 20px 0;
+}
+.movie_icon i{
+    color: rgb(225, 178, 49);
+    font-size: 14px;
+}
+.movie_icon a{
+    margin: 0 20px;
+    font-size: 14px;
+}
+.movie_page_text{
+    margin-top: 50px;
+}
+.movie_page_text button{
+    margin-bottom: 20px ;
+}
+.movie_pg_information{
+    line-height: 30px;
+    font-weight: 500;
+}
+.movie_pg_information p a{
+    color: #719dbd !important;
+}
+.line_movie{
+    border: 1px solid #222;
+}
+.movie_page_sugest h1{
+    text-align :center;
+    color: #f1b722;
+    font-size: 40px;
+    margin: 50px 0;
+}
+.movie_page_sugest img{
+    width: 80%;
+    border-radius: 5px;
+}
+.movie_page_sugest{
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+.movie_page_sugest .movie_icon_sugest{
+    line-height: 2;
+}
+.movie_page_sugest .movie_icon_sugest i{
+    color: rgb(225, 178, 49);
+}
+.movie_page_sugest h2 a{
+    font-size: 20px;
+    color: white;
+}
+.movie_page_sugest p{
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+@media only screen  and (max-width: 767px) {
+    .movie_page_img img{
+        width: 60% ;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .movie_page_text h2{
+        text-align: center;
+    }
+    .movie_page_text h1{
+        text-align: center;
+    }
+    .movie_page_sugest .col-sm-12 img{
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .movie_page_sugest .movie_icon_sugest{
+        text-align: center;
+        margin: 10px;
+    }
+    .movie_page_sugest h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .movie_page_sugest p{
+        text-align: center;
+    }
+
+}
