@@ -73,6 +73,7 @@ body{
    }
    .Search input::placeholder{
      color: #292324;
+     font-size: 12px;
    }
  .Search button.clear{
   position: absolute;

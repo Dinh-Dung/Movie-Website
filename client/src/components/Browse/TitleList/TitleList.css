@@ -15,14 +15,13 @@
     width: 100%;
     
 }
-.titlelist .title {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.4;
-    margin-bottom: 1em;
-    color: white;
+.category {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.4;
+        color: white;
+        margin-bottom: 10px;
 }
 .titles-wrapper{
     display: flex;
-    justify-content: space-between;
 }
