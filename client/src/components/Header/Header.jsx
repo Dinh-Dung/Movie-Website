@@ -1,7 +1,8 @@
 import React from 'react'
 import Logo from '../../assets/Logo/Logo'
 import './Header.css'
-import UserProfile from './UserProfile/UserProfile'
+import { Link } from 'react-router-dom'
+import UserProfile from './User/User'
 import { useState,useEffect } from 'react'
 export default function Header() {
 
@@ -37,7 +38,7 @@ export default function Header() {
   return (
         <div className="Navigation"  style={{height:navSize,transition:"all 1s"}}>
         <nav className="navbar navbar-expand-lg navbar-light " >
-        <a className="navbar-brand" href="#undefine"><Logo/></a>
+        <a className="navbar-brand" href="#undefine"><Link to="/homepage"><Logo/></Link></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
@@ -45,10 +46,10 @@ export default function Header() {
           <div className="menu" >
           <ul className="navbar-nav mr-auto ">
             <li className="nav-item " >
-              <a className="nav-link" href="#undefine" style={{color:navColorText}}>Home</a>
+              <Link className="nav-link" to="/homepage" style={{color:navColorText}} >Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#undefine" style={{color:navColorText}}>Hành Động</a>
+              <Link className="nav-link" to="" style={{color:navColorText}}>Hành Động</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#undefine"style={{color:navColorText}} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -65,8 +66,8 @@ export default function Header() {
             </li>
           </ul>
 
-          <div className="Search" >
-          <form action='' className="form-inline my-2 my-lg-0"  onSubmit={e=>{handleSubmitChange(e)}}>
+          <div className="Search " >
+          <form action='' className=""  onSubmit={e=>{handleSubmitChange(e)}}>
           <input
             type="search"
             name='text'
@@ -85,7 +86,7 @@ export default function Header() {
             // loading 
           }
 
-          <button className="search-btn"  style={{color:navColorText}}>
+          <button className="search-btn "  style={{color:navColorText}}>
           <i className="bi bi-search"></i>
           </button>
 

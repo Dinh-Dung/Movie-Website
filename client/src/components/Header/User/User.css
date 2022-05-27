@@ -2,9 +2,6 @@
     margin-left: auto;
   }
   .UserProfile .User {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
   }
   .UserProfile .User .image {

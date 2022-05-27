@@ -1,14 +1,12 @@
 .item{
-    min-width:calc(20% - 10px);
-    width: calc(20% - 10px);
     height: 200px;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-color: #000000; */
     overflow: hidden;
     transition: background 1s ease;
     margin-right: 10px;
+    border-radius: 5px;
 }
 .item .overlay{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
@@ -26,26 +24,27 @@
     opacity: 0;
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
+    user-select: none;
 }
 .item .overlay .rating {
     font-size: 14px;
     opacity: 0;
     -webkit-transition: opacity .25s ease .125s;
     transition: opacity .25s ease .125s;
-    
+    user-select: none;
   }
-.item .overlay .plot {
+.item .overlay .plot {  
     font-size: 14px;
     display:-webkit-box;
-    
     margin-top: 100px;
     font-weight: 300;
     line-height: 1.6;
-    opacity: 0;
+    opacity: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-transition: margin .25s ease .125s, opacity .25s ease .25s;
     transition: margin .25s ease .125s, opacity .25s ease .25s;
+    user-select: none;
   }
 .item:hover {
     background-size: 150%;

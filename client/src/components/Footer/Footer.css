@@ -16,26 +16,17 @@
       /* -webkit-transform: rotate(180deg);
               transform: rotate(180deg); */
 }
+.Logos{
+    margin-bottom: 30px;
+}
 .Logos a.ins svg{
     color: #e1306c;
 }
-.Logos a{
+.Logos a svg{
     margin-right: 30px;
-    font-size: 30px;
-}
-.sub_links ul .sub_link{
-    justify-content: space-around;
-    list-style: none;
-    margin-top: 10px;
-}
-.sub_links ul li{
-    margin-top: 10px;
-}
-.sub_links ul li a{
-    color: rgb(95, 95, 95);
     font-size: 16px;
-    text-decoration: none;
 }
+
 .footer{
     text-align: center;
     margin-top: 50px;
@@ -49,7 +40,18 @@
     margin-inline-end: 0px;
 }
 
-
+.sub_links li {
+    list-style: none;
+    padding-left: 30%;
+} 
+.sub_links li a{
+    text-decoration: none;
+    color: gray;
+    user-select: none;
+}
+.sub_links li a:hover{
+    color: wheat;
+}
 /* @media(max-width: 700px) {
     .sub-links ul {
         display: grid;

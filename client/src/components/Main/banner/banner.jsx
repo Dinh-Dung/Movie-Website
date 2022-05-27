@@ -19,7 +19,7 @@ export default function MainBanner() {
                         <h2>Unlimited movies, TV<br />shows, and more</h2>
                         <p>Watch anywhere. Cancel anytime.</p>
                         <span className="text-email">
-                            <a>Ready to watch? Enter your email to create or restart your membership</a>
+                            <a href='#undefine'>Ready to watch? Enter your email to create or restart your membership</a>
                         </span>
                         <form>
                             <div className="form-group">
