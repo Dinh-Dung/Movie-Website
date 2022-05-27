@@ -29,23 +29,23 @@ export default function Footer() {
 
           <div className="sub_links container">
             <ul>
-              <div className="col-sm-12 sub_link">
-              <div className=" col-sm ">
+              <div className="row sub_link">
+              <div className=" col-lg-3 col-md-6 col-sm-6 ">
               <li><a href="#undefine">Audio and Subtitles</a></li>
               <li><a href="#undefine">Audio Description</a></li>
               <li><a href="#undefine">Help Center</a></li>
               </div>
-            <div className="col-sm ">
+            <div className="col-lg-3 col-md-6 col-sm-6 ">
               <li><a href="#undefine">Gift Cards</a></li>
               <li><a href="#undefine">Media Center</a></li>
               <li><a href="#undefine">Investor Relations</a></li>
               </div>
-            <div className="col-sm ">
+            <div className="col-lg-3 col-md-6 col-sm-6 ">
               <li><a href="#undefine">Jobs</a></li>
               <li><a href="#undefine">Terms of Use</a></li>
               <li><a href="#undefine">Privacy</a></li>
              </div>
-            < div className="col-sm ">
+            < div className="col-lg-3 col-md-6 col-sm-6 ">
               <li><a href="#undefine">Legal Notices</a></li>
               <li><a href="#undefine">Corporate Information</a></li>
                <li><a href="#undefine">Contact Us</a></li>

@@ -6,12 +6,13 @@ import Footer from '../components/Footer/Footer'
 export default function MoviePage() {
   return (
     <>
- <header className="Header">
+    <div className="bg">
+      <header className="Header">
         <Header/>
       </header>  
-    <Movie />
-    <Footer />
-      
+      <Movie />
+      <Footer />
+      </div>
     </>
   )
 }

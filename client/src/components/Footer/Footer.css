@@ -24,7 +24,6 @@
     font-size: 30px;
 }
 .sub_links ul .sub_link{
-    display: flex;
     justify-content: space-around;
     list-style: none;
     margin-top: 10px;

@@ -1,11 +1,14 @@
 import React from 'react'
 import './auth.css'
 import Logo from "../../assets/Logo/Logo"
-
+import { useNavigate } from "react-router-dom";
 export default function SignUp() {
     const shoot = () => {
-        alert("Đăng ký thành công!");
+        alert("Đăng ký thành công!") ;
       }
+      const navigate = useNavigate()
+    
+      const onClick = () => navigate("/signin")
     return (
         <div className="bg_img" style={{ backgroundImage: `url(/images/anh_nen.jpg)` }}>
             <div className="banner_login hybrid-login-form"> 
