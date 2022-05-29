@@ -22,7 +22,8 @@ export default function Movie() {
                         </div>
                         <div className="col-md-7">
                             <div className="movie_page_text">
-                                <h1>Naruto Shippuuden Movie 4: The Lost Tower (2010)</h1>
+                                <h1>Naruto: Tòa tháp bị mất</h1>
+                                {/* <h2>Naruto Shippuuden Movie 4: The Lost Tower (2010)</h2> */}
                                 <div className="movie_icon">
                                 <p>5/10</p>
                                     <a> <i className="bi bi-tag"></i>
@@ -34,13 +35,15 @@ export default function Movie() {
                                 </div>
                                 
                                 <div className="movie_pg_information">
+                                    {/* <p>Trạng Thái: Hoàn tất</p> */}
                                     <p>Thời lượng: 85 phút</p>
                                     <p>Số tập: Chưa rõ</p>
                                     <p>Năm sản xuất: <a href='#1'>2010</a></p>
                                     <p>Quốc gia: <a href='#2'>Nhật Bản</a> </p>
                                     <p>Thể loại: <a href='#3'>Hoạt Hình</a> </p>
                                     <p>Đạo diễn: <a href='#4'>Masahiko Murata</a></p>
-                                    <p>Mô tả: Được giao nhiệm vụ một để đi bắt Mukade, một missing-nin ( ninja bỏ trốn ). Uzumaki Naruto đc sắp đặt vào di tích lịch sử vẻ vang đã bị tàn phá: Ouran, nơi Naruto truy đuổi các ninja đang làm việc cho Mukade và Mukade. Mục tiêu của Mukade đã được tiết lộ là để có một leyline hoạt động bên trong những sự tàn phá và hắn sẽ giải phóng sức mạnh của leyline, gây ra một ánh sáng để bao bọc Naruto và gửi Nar vào quá khứ, 20 năm trước khi mọi chuyện bắt đầu. Khi Naruto thức dậy trong quá khứ, Nar đã đc tiếp xúc, nói chuyện và chiến đấu cùng Người Cha Vĩ Đại, Hokage Đệ Tứ, Namikaze</p>
+                                    <p>Mô tả:  One Piece là bộ truyện tranh dành cho thiếu niên của tác giả nổi tiếng Oda Eiichiro. Bộ manga này được chuyển thể thành một series anime nhiều tập hài hước, đặc sắc. Phim Đảo Hải Tặc mở đầu câu chuyện bằng cảnh xử tử vua hải tặc Gol D. Roger. Trước khi chết ông đã tiết lộ rằng mình có một kho báu</p>
+                                    {/* <p>Diễn viên: <a href='#5'>Junko Takeuchi, Chie Nakamura, Rikiya Koyama, Saori Hayami, Satoshi Hino, Nobuaki Fukuda, Kenji Hamada, Keiko Nemoto, Yumi Tôma, Yûko Kobayashi, Fujiko Takimoto, Mutsumi Tamura, Mayuki Makiguchi, Daichi Endo, Ryô Iwasaki</a></p> */}
                                 </div>
                             </div>
                         </div>
