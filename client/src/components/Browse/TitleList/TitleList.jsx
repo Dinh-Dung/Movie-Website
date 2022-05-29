@@ -5,6 +5,7 @@ import '../../../styles/responsive.css'
 export default function TitleList() {
   //chua logic de truy xuat ket qua tu API   ,o day se fetch api
   return (
+    <>
     <div className="titlelist container-fluid">
       <div className=" title">
         <div className="category">
@@ -29,5 +30,6 @@ export default function TitleList() {
         </div>
       </div>
     </div>
+    </>
   );
 }

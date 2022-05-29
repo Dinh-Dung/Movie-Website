@@ -2,6 +2,8 @@ import React from 'react'
 import './Footer.css'
 export default function Footer() {
   return (
+    <>
+    <div className="line"></div>
     <section className="Links">
         <div className="Logos">
         <a href="#undefine">
@@ -29,22 +31,22 @@ export default function Footer() {
 
           <div className="container sub_links">
             <div className="row sub_links">
-            <div className="col-xl-3 ">
+            <div className="col-lg-3 col-md-6 col-sm-6">
               <li><a href="#undefine">Audio and Subtitles</a></li>
               <li><a href="#undefine">Audio Description</a></li>
               <li><a href="#undefine">Help Center</a></li>
             </div>
-            <div className="col-xl-3 ">
+            <div className="col-lg-3 col-md-6 col-sm-6">
               <li><a href="#undefine">Gift Cards</a></li>
               <li><a href="#undefine">Media Center</a></li>
               <li><a href="#undefine">Investor Relations</a></li>
               </div>
-            <div className="col-xl-3 ">
+            <div className="col-lg-3 col-md-6 col-sm-6">
               <li><a href="#undefine">Jobs</a></li>
               <li><a href="#undefine">Terms of Use</a></li>
               <li><a href="#undefine">Privacy</a></li>
              </div>
-            <div className="col-xl-3 ">
+            <div className="col-lg-3 col-md-6 col-sm-6">
               <li><a href="#undefine">Legal Notices</a></li>
               <li><a href="#undefine">Corporate Information</a></li>
               <li><a href="#undefine">Contact Us</a></li>
@@ -57,5 +59,6 @@ export default function Footer() {
           <p>Carlos Avila &copy 2022</p>
           </div>
     </section>
+    </>
   )
 }

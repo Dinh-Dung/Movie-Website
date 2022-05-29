@@ -100,3 +100,8 @@ body{
 .Search button.search-btn:hover{
   color: red !important;
 }
+@media only screen and (max-width: 600px)  {
+    .Navigation button span{
+      justify-items: end;
+    }
+}

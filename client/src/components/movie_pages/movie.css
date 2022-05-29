@@ -15,12 +15,6 @@
     line-height: 70px;
 
 }
-.movie_page_text h2{
-    max-width: 95%;
-    margin-bottom: 20px;
-    font-size: 40px;
-
-}
 .movie_page_img{
     margin-top: 85px;
 }
@@ -78,13 +72,19 @@
 .movie_page_sugest h2 a{
     font-size: 20px;
     color: white;
+
+    
+}
+.movie_page_sugest h2{
+    margin-bottom: 100px;
 }
 .movie_page_sugest p{
     font-size: 16px;
-    margin-bottom: 100px;
+
+
 }
 
-@media only screen  and (max-width: 767px) {
+@media only screen  and (max-width: 600px) {
     .movie_page_img img{
         width: 60% ;
         display: block;

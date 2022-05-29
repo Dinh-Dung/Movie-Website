@@ -7,6 +7,7 @@ import MoviePage from "./pages/movie";
 import SignIn from "./pages/signin";
 import SignUp from "./pages/signup";
 
+
 function App() {
   return (
   <Routes>
@@ -17,6 +18,7 @@ function App() {
     <Route path="/moviepage" element={<MoviePage />}/>
     <Route path="/signin" element={<SignIn />}/>
     <Route path="/signup" element={<SignUp />}/>
+
   </Routes>
   );
 }
