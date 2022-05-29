@@ -26,12 +26,12 @@ export default function Movie() {
                                 <h1>Naruto: Tòa tháp bị mất</h1>
                                 {/* <h2>Naruto Shippuuden Movie 4: The Lost Tower (2010)</h2> */}
                                 <div className="movie_icon">
-                                    <i className="bi bi-star-fill"></i>
-                                    <i className="bi bi-star-fill"></i>
-                                    <i className="bi bi-star-fill"></i>
-                                    <i className="bi bi-star-fill"></i>
-                                    <i className="bi bi-star"></i>
-                                    <a> <i className="bi bi-tag"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <a> <i class="bi bi-tag"></i>
                                         Phim lẻ
                                     </a>
                                     <a><i className="bi bi-clock"></i>

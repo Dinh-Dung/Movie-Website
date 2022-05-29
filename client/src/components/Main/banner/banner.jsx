@@ -24,7 +24,7 @@ export default function MainBanner() {
                         <form>
                             <div className="form-group">
                                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                                <button type="button" className="btn btn-danger" onClick={getHandler}>Get Started <i className="bi bi-chevron-right"></i></button>
+                                <button type="button" class="btn btn-danger" onClick={getHandler}>Get Started <i class="bi bi-chevron-right"></i></button>
                             </div>
                         </form>
                     </div>
