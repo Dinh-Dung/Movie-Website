@@ -15,5 +15,8 @@
     z-index: 5;
   }
   .Main-all{
-    background: linear-gradient(to bottom, #141414 100%, rgba(0, 0, 0, 0) 100%);
+    background: black;
+  }
+  .bg{
+    background: black
   }

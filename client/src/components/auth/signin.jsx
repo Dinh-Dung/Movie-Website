@@ -1,11 +1,16 @@
 import React from 'react'
 import './auth.css'
-import Logo from "../../assets/Logo/Logo"
+import { useNavigate } from "react-router-dom";
 export default function SignIn(props) {
       
     const shoot = () => {
         alert("Đăng nhập thành công!");
       }
+
+        const navigate = useNavigate()
+    
+        const onClick = () => navigate("/signup")
+    
 
     return (
         <div className="bg_img" style={{ backgroundImage: `url(/images/anh_nen.jpg)` }}>
@@ -38,7 +43,12 @@ export default function SignIn(props) {
                         <label className="form-check-label" >
                            Remember me
                         </label>
+                      
                     </div>
+                    <div onClick={onClick}>
+                            Do not have an account? <a href="#undefine">
+                            SignUp Now</a>
+                        </div>
                 </form>
             </div>
         </div>

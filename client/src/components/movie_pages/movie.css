@@ -1,9 +1,14 @@
 .movie_page{
-    margin: 150px 0;
-    background-color: #081b27;
+   
     color: rgb(255, 255, 255);
 }
+.movie_play {
+    padding-top: 150px;
+    width: 100% !important;
+    z-index: 9999;
+}
 .movie_page_text  h1{
+    margin-top: 70px;
     max-width: 95%;
     margin-bottom: 15px;
     font-size: 56px;
@@ -17,7 +22,7 @@
 
 }
 .movie_page_img{
-    margin-top: 50px;
+    margin-top: 85px;
 }
 .movie_page_img img{
     border-radius: 10px;
@@ -62,7 +67,6 @@
     border-radius: 5px;
 }
 .movie_page_sugest{
-    margin-bottom: 100px;
     margin-top: 40px;
 }
 .movie_page_sugest .movie_icon_sugest{

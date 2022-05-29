@@ -4,7 +4,8 @@ import BrowsePage from "./pages/browse";
 import HomePage from "./pages/home";
 import Userprofile from "./pages/userprofile";
 import MoviePage from "./pages/movie";
-import Auth from "./pages/auth";
+import SignIn from "./pages/signin";
+import SignUp from "./pages/signup";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
     <Route path="/homepage" element={<HomePage />}/>
     <Route path="/userprofile" element={<Userprofile />}/>
     <Route path="/moviepage" element={<MoviePage />}/>
-    <Route path="/auth" element={<Auth />}/>
+    <Route path="/signin" element={<SignIn />}/>
+    <Route path="/signup" element={<SignUp />}/>
   </Routes>
   );
 }

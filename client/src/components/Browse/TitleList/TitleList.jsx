@@ -1,31 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./TitleList.css";
 import Item from "./Item/Item";
 import '../../../styles/responsive.css'
-export default function TitleList() {
+
+export default function TitleList({ filmsData,title }) {
+  const [films, setFilms] = useState([])
   //chua logic de truy xuat ket qua tu API   ,o day se fetch api
+
+
+  useEffect (()=>{
+    setFilms(filmsData)
+  },[filmsData])
+
+
+  const renderFilms = () => {
+    return films.map((value, index) => {
+      return (
+        <div className="col-12 col-xl-2dot4" key={index}>
+          <Item  data={value}/>
+        </div>)
+    })
+  }
+
   return (
     <div className="titlelist container-fluid">
       <div className=" title">
         <div className="category">
-          <h1>Top TV picks for Jack</h1>
+          <h1>{title}</h1>
         </div>
         <div className="row ">
-          <div className="col-12 col-xl-2dot4">
-            <Item />
-          </div>
-          <div className="col-12 col-xl-2dot4">
-            <Item />
-          </div>
-          <div className="col-12 col-xl-2dot4">
-            <Item />
-          </div>
-          <div className="col-12 col-xl-2dot4">
-            <Item />
-          </div>
-          <div className="col-12 col-xl-2dot4">
-            <Item />
-          </div>
+          {renderFilms()}
         </div>
       </div>
     </div>
