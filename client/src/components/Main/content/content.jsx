@@ -11,7 +11,7 @@ export default function MainContent() {
               <h1>Have an Android Phone? Get our new free plan!</h1>
               <h2>Watch a selection of new movies and TV shows without adding any payment details!</h2>
               <div className="content_link">
-                <a href='#'>Get the app <i class="bi bi-chevron-right"></i></a>
+                <a href='#undefine'>Get the app <i className="bi bi-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function MainContent() {
               <img className="content_img_card" src='./images/tv.png' />
               <div className="content_video">
                 <div>
-                  <iframe className="embed-responsive-item" src="./video/video-tv-0819.m4v? autoPlay=1&loop=1&controls=0 " allowfullscreen></iframe>
+                  <iframe className="embed-responsive-item" src="./video/video-tv-0819.m4v? autoPlay=1&loop=1&controls=0 "></iframe>
                 </div>
               </div>
             </div>
@@ -78,7 +78,6 @@ export default function MainContent() {
         </div>
       </div>
       </div>
-      <div className="line"></div>
     </div>
   )
 }

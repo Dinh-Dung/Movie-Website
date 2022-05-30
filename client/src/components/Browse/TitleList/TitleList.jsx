@@ -23,6 +23,7 @@ export default function TitleList({ filmsData,title }) {
   }
 
   return (
+    <>
     <div className="titlelist container-fluid">
       <div className=" title">
         <div className="category">
@@ -33,5 +34,6 @@ export default function TitleList({ filmsData,title }) {
         </div>
       </div>
     </div>
+    </>
   );
 }

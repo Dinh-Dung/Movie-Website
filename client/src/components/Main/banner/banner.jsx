@@ -19,12 +19,12 @@ export default function MainBanner() {
                         <h2>Unlimited movies, TV<br />shows, and more</h2>
                         <p>Watch anywhere. Cancel anytime.</p>
                         <span className="text-email">
-                            <a href='#undefine'>Ready to watch? Enter your email to create or restart your membership</a>
+                            <a>Ready to watch? Enter your email to create or restart your membership</a>
                         </span>
                         <form>
                             <div className="form-group">
                                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                                <button type="button" class="btn btn-danger" onClick={getHandler}>Get Started <i class="bi bi-chevron-right"></i></button>
+                                <button type="button" className="btn btn-danger" onClick={getHandler}>Get Started <i className="bi bi-chevron-right"></i></button>
                             </div>
                         </form>
                     </div>

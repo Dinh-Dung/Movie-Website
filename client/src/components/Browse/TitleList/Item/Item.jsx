@@ -1,4 +1,6 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
+
 import './Item.css'
 export default function Item({ data }) {
   return (

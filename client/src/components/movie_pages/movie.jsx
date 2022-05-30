@@ -7,8 +7,8 @@ export default function Movie() {
         <div className="movie_page">
             <div className="movie_play">
                 <div className="container">
-                    <div class="embed-responsive embed-responsive-21by9"   >
-                         <iframe title="link-film" classname="embed-responsive-item" src="./video/Naruto_HD.mp4" />
+                    <div className="embed-responsive embed-responsive-21by9"   >  
+                        <iframe className="embed-responsive-item"  src="./video/Naruto_HD.mp4" ></iframe>
                     </div>
                 </div>
             </div>
@@ -25,12 +25,8 @@ export default function Movie() {
                                 <h1>Naruto: Tòa tháp bị mất</h1>
                                 {/* <h2>Naruto Shippuuden Movie 4: The Lost Tower (2010)</h2> */}
                                 <div className="movie_icon">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star"></i>
-                                    <a> <i class="bi bi-tag"></i>
+                                <p>5/10</p>
+                                    <a> <i className="bi bi-tag"></i>
                                         Phim lẻ
                                     </a>
                                     <a><i className="bi bi-clock"></i>
@@ -44,7 +40,7 @@ export default function Movie() {
                                     <p>Số tập: Chưa rõ</p>
                                     <p>Năm sản xuất: <a href='#1'>2010</a></p>
                                     <p>Quốc gia: <a href='#2'>Nhật Bản</a> </p>
-                                    <p>Thể loại: <a href='#3'>Hành Động, Hoạt Hình, Phiêu Lưu</a> </p>
+                                    <p>Thể loại: <a href='#3'>Hoạt Hình</a> </p>
                                     <p>Đạo diễn: <a href='#4'>Masahiko Murata</a></p>
                                     <p>Mô tả:  One Piece là bộ truyện tranh dành cho thiếu niên của tác giả nổi tiếng Oda Eiichiro. Bộ manga này được chuyển thể thành một series anime nhiều tập hài hước, đặc sắc. Phim Đảo Hải Tặc mở đầu câu chuyện bằng cảnh xử tử vua hải tặc Gol D. Roger. Trước khi chết ông đã tiết lộ rằng mình có một kho báu</p>
                                     {/* <p>Diễn viên: <a href='#5'>Junko Takeuchi, Chie Nakamura, Rikiya Koyama, Saori Hayami, Satoshi Hino, Nobuaki Fukuda, Kenji Hamada, Keiko Nemoto, Yumi Tôma, Yûko Kobayashi, Fujiko Takimoto, Mutsumi Tamura, Mayuki Makiguchi, Daichi Endo, Ryô Iwasaki</a></p> */}
@@ -59,54 +55,39 @@ export default function Movie() {
                     <div className="line_movie">
                     </div>
                     <h1>CÓ THỂ BẠN CŨNG MUỐN XEM</h1>
+
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-sm-12">
                             <img src="./images/jujutsu.jpg" />
                             <div className="movie_icon_sugest">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
+                                <p>5/10</p>
                             </div>
                             <h2><a href="#1">Jujutsu Kaisen 0: Chú Thuật Hồi Chiến</a></h2>
-                            <p>Jujutsu Kaisen 0 Movie (2021)</p>
+
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12">
                             <img src='./images/jujutsu.jpg'></img>
                             <div className="movie_icon_sugest">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
+                            <p>5/10</p>
                             </div>
                             <h2><a href="#1">Jujutsu Kaisen 0: Chú Thuật Hồi Chiến</a></h2>
-                            <p>Jujutsu Kaisen 0 Movie (2021)</p>
+                            
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12">
                             <img src='./images/jujutsu.jpg'></img>
                             <div className="movie_icon_sugest">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
+                            <p>5/10</p>
                             </div>
                             <h2><a href="#1">Jujutsu Kaisen 0: Chú Thuật Hồi Chiến</a></h2>
-                            <p>Jujutsu Kaisen 0 Movie (2021)</p>
+                            
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12">
                             <img src='./images/jujutsu.jpg'></img>
                             <div className="movie_icon_sugest">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
+                            <p>5/10</p>
                             </div>
                             <h2><a href="#1">Jujutsu Kaisen 0: Chú Thuật Hồi Chiến</a></h2>
-                            <p>Jujutsu Kaisen 0 Movie (2021)</p>
+                            
                         </div>
                     </div>
                 </div>
