@@ -21,14 +21,14 @@ export default function HomePage() {
         // 
       })()
   }, [])
-
-
   return (
     <div>
       <header className="Header">
         <Header />
       </header>
-      <Banner />
+      <Banner
+
+       />
       <TitleList filmsData={animeFilms} title="Top Phim Hoạt Hình Anime Hay Nhất"/>
       <TitleList filmsData={actionFilms} title="Top Phim Hành Động Hay Nhất"/>
       <TitleList filmsData={romaticFilms} title="Top Phim Tình Cảm Hay Nhất"/>

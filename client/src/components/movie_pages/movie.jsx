@@ -8,8 +8,7 @@ export default function Movie() {
             <div className="movie_play">
                 <div className="container">
                     <div class="embed-responsive embed-responsive-21by9"   >
-                         
-                        <iframe class="embed-responsive-item"  src="./video/Naruto_HD.mp4" ></iframe>
+                         <iframe title="link-film" classname="embed-responsive-item" src="./video/Naruto_HD.mp4" />
                     </div>
                 </div>
             </div>
@@ -62,7 +61,7 @@ export default function Movie() {
                     <h1>CÓ THỂ BẠN CŨNG MUỐN XEM</h1>
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-sm-12">
-                            <img src='./images/jujutsu.jpg'></img>
+                            <img src="./images/jujutsu.jpg" />
                             <div className="movie_icon_sugest">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>

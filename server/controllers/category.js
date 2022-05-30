@@ -25,3 +25,14 @@ exports.newCategory = async (req, res) => {
         return res.status(404).json({ message: "Add failed !" })
     }
 }
+exports.getCategory = async (req,res)=>{
+    try {
+        conn.query("Select category.Name as CateName, subcategory.Name as SubName  from category left join subcategory on category.ID = subcategory.Category",(err,rows)=>{
+            if (err) return res.status(404).json({ message: "Add failed !" })
+                return res.send(rows)
+        })
+        
+    } catch (error) {
+        return res.status(404).json({ message: "Add failed !" })
+    }
+}
