@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
 
 import './Item.css'
 export default function Item({ data }) {
@@ -9,7 +8,7 @@ export default function Item({ data }) {
             <div className="title">
                 {data.Name}
             </div>
-            <div className="rating">7/10</div>
+            <div className="rating">{data.Rate}/10</div>
             <div className="plot">
               {data.Description}
             </div>

@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './movie.css'
 
 export default function Movie() {
+
+
+// useEffect(()=>{
+//     (async()=>{
+//         const res = await fetch('api/film/new')
+//         const data = await res.json()
+//         setFilms(data)
+//     })()
+// })
+
+
     return (
-        <>
         <div className="movie_page">
             <div className="movie_play">
                 <div className="container">
                     <div className="embed-responsive embed-responsive-21by9"   >  
-                        <iframe className="embed-responsive-item"  src="./video/Naruto_HD.mp4" ></iframe>
+                        <iframe className="embed-responsive-item" title="linkmovie"  src="./video/Naruto_HD.mp4" ></iframe>
                     </div>
                 </div>
             </div>
@@ -26,7 +36,8 @@ export default function Movie() {
                                 {/* <h2>Naruto Shippuuden Movie 4: The Lost Tower (2010)</h2> */}
                                 <div className="movie_icon">
                                 <p>5/10</p>
-                                    <a> <i className="bi bi-tag"></i>
+                                    <a> 
+                                        <i className="bi bi-tag"></i>
                                         Phim lẻ
                                     </a>
                                     <a><i className="bi bi-clock"></i>
@@ -93,6 +104,5 @@ export default function Movie() {
                 </div>
             </div>
         </div>
-        </>
     )
 }

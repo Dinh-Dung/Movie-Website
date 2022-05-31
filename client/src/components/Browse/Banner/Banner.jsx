@@ -37,7 +37,7 @@ export default function Banner() {
           </div>
         </div> 
         <div className="content-right col-xl-6">
-          <img className="logo1" src={value.ImageLink} alt="narcos background" />
+          <img className="logo1" src={value.ImageLinkMoviePage} alt="narcos background" />
         </div>
         </div> 
         <div className="overlay"></div> 

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./TitleList.css";
 import Item from "./Item/Item";
 import '../../../styles/responsive.css'
 
 export default function TitleList({ filmsData,title }) {
   const [films, setFilms] = useState([])
-  //chua logic de truy xuat ket qua tu API   ,o day se fetch api
 
 
   useEffect (()=>{
@@ -13,12 +13,18 @@ export default function TitleList({ filmsData,title }) {
   },[filmsData])
 
 
+  const navigate = useNavigate()
+  const clickHandleChange =()=>{
+   navigate("/moviepage")
+  }
+
   const renderFilms = () => {
     return films.map((value, index) => {
-      return (
-        <div className="col-12 col-xl-2dot4" key={index}>
-          <Item  data={value}/>
-        </div>)
+      return ( 
+        <div className="col-12 col-xl-2dot4" key={index} onClick={()=>{clickHandleChange()}}>
+          <Item  data={value} />
+        </div>
+        )
     })
   }
 

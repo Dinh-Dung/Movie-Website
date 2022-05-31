@@ -21,6 +21,17 @@ export default function HomePage() {
         // 
       })()
   }, [])
+  useEffect(() => {
+    (async () => {
+      // Fetch top anime films
+      const res = await fetch('/api/film/get-top?category=2')
+      const data = await res.json()
+      setActionFilms(data)
+
+      // 
+    })()
+}, [])
+
   return (
     <div>
       <header className="Header">
