@@ -1,7 +1,7 @@
 const { Router } = require('express')
 const { newSubCategory, newCategory,getCategory } = require('../controllers/category')
 const { newDirector } = require('../controllers/director')
-const { newMovie, getTopMovie,getFilm} = require('../controllers/movie')
+const { newMovie, getTopMovie,showFilm} = require('../controllers/movie')
 const { register } = require('../controllers/user')
 const {mostView,getMostView} = require('../controllers/mostview')
 const router = Router()
@@ -22,7 +22,7 @@ router.post('/film/new', newMovie)
 router.get('/film/get-top', getTopMovie)
 
 //showfilm
-
+router.get('/showfilm/film',showFilm)
 
 //mostfilm
 router.post('/mostview/new',mostView)

@@ -27,8 +27,6 @@ export default function HomePage() {
       const res = await fetch('/api/film/get-top?category=2')
       const data = await res.json()
       setActionFilms(data)
-
-      // 
     })()
 }, [])
 

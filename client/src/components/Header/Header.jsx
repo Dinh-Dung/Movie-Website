@@ -12,7 +12,7 @@ export default function Header() {
 
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavSize("4rem") : setnavSize("2rem");
-    window.scrollY > 10 ? setColorText("white") : setColorText("tranparent");
+    window.scrollY > 10 ? setColorText("white") : setColorText("black");
   };
 
   const handleClear = () => {
@@ -91,7 +91,7 @@ export default function Header() {
   return (
     <div
       className="Navigation"
-      style={{ height: navSize, transition: "all 1s" }}
+      style={{ height: navSize, transition: "all 1s"}}
     >
       <nav className="navbar navbar-expand-lg navbar-light ">
         <a className="navbar-brand" href="#undefine">
