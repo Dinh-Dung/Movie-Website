@@ -15,7 +15,8 @@ exports.newMovie = async (req, res) => {
         return res.status(404).json({ message: "Add failed !" })
     }
 }
-<<<<<<< HEAD
+
+
 
 exports.deleteMovie = async (req, res) => {
     try {
@@ -47,8 +48,6 @@ exports.getFilm = async (req, res) => {
         return res.status(404).json({ message: "Cannot find films !" })
     }
 }
-=======
->>>>>>> 74b2496d18c3a9d1cbfff178ce3bebf2e26812cc
 exports.getTopMovie = async (req, res) => {
     try {
         const category = req.query.category // => Important
