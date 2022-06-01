@@ -14,18 +14,23 @@ export default function TitleList({ filmsData,title }) {
 
 
   const navigate = useNavigate()
-  const clickHandleChange =()=>{
-   navigate("/moviepage")
+  const onClickHandle =(id)=>{
+   navigate(`/movie?filmID=${id}`)
   }
 
   const renderFilms = () => {
     return films.map((value, index) => {
-      return ( 
-        <div className="col-12 col-xl-2dot4" key={index} onClick={()=>{clickHandleChange()}}>
+       if(index <= 5){
+        return(
+          <div className="col-12 col-xl-2dot4 col-md-6 mt-2" key={index} onClick={()=>{onClickHandle(value.ID)}}>
           <Item  data={value} />
         </div>
         )
-    })
+      }else{
+        return null
+      }}
+      
+        )
   }
 
   return (
