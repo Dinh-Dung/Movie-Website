@@ -18,6 +18,8 @@ exports.newMovie = async (req, res) => {
 
 
 
+
+
 exports.deleteMovie = async (req, res) => {
     try {
         const {id} = req.params
