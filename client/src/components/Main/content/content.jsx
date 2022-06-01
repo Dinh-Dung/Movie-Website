@@ -38,7 +38,7 @@ export default function MainContent() {
               <img className="content_img_card" src='./images/tv.png' />
               <div className="content_video">
                 <div>
-                  <iframe className="embed-responsive-item" src="./video/video-tv-0819.m4v? autoPlay=1&loop=1&controls=0 "></iframe>
+                  <iframe className="embed-responsive-item" src="./video/video-tv-0819.m4v?autoPlay=1&&loop=1&&controls=0 "></iframe>
                 </div>
               </div>
             </div>

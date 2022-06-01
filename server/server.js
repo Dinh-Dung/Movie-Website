@@ -7,7 +7,8 @@ var app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
 
-app.use('/api', router)
+app.use('/api', router.other)
+app.use('/auth', router.auth)
 
 // app.get('/get', (req, res) => {
 //     con.query('Select * from products', (err, rows) => {

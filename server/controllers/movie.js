@@ -15,6 +15,23 @@ exports.newMovie = async (req, res) => {
         return res.status(404).json({ message: "Add failed !" })
     }
 }
+
+exports.deleteMovie = async (req, res) => {
+    try {
+        const {id} = req.params
+        conn.query("delete from film where id=?", id, (err) => {
+            if (err) {
+                return res.status(404).json({ message: "Delete failed !" })
+            }
+            res.status(200).json({ message: "Delete successfully!" })
+        })
+
+    } catch (error) {
+
+        return res.status(404).json({ message: "Delete failed !" })
+    }
+}
+
 exports.getFilm = async (req, res) => {
     try {
 
