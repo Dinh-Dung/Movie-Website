@@ -1,5 +1,6 @@
 import React from "react";
 import axios from 'axios'
+import { message } from 'antd';
 var UserStateContext = React.createContext();
 var UserDispatchContext = React.createContext();
 
@@ -65,7 +66,7 @@ function loginUser(dispatch, login, password, history, setIsLoading, setError) {
       history.push('/app/dashboard')
     }).catch(err=>{
       // dispatch({ type: "LOGIN_FAILURE" });
-      alert("Username or password does not exist!")
+      message.error('Username or password does not exist!')
       setError(null);
       setIsLoading(false);
     })

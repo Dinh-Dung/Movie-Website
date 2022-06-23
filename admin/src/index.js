@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider } from "@material-ui/styles";
 import { CssBaseline } from "@material-ui/core";
-
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import './index.css';
 import Themes from "./themes";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";

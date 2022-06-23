@@ -5,7 +5,7 @@ exports.newMovie = async (req, res) => {
         const data = req.body
         conn.query("insert into film set ?", data, (err, rows) => {
             if (err) {
-                return res.status(404).json({ message: "Add failed !" })
+                return res.status(404).json({ message: JSON.stringify(err) })
             }
             res.status(200).json({ message: "Add successfully!" })
         })
@@ -16,8 +16,21 @@ exports.newMovie = async (req, res) => {
     }
 }
 
+exports.editMovie = async (req, res) => {
+    try {
+        const data = req.body
+        conn.query(`update film set ? where ID=${data.ID}`, data, (err, rows) => {
+            if (err) {
+                return res.status(404).json({ message: JSON.stringify(err) })
+            }
+            res.status(200).json({ message: "Edit successfully!" })
+        })
 
+    } catch (error) {
 
+        return res.status(404).json({ message: "Edit failed !" })
+    }
+}
 
 
 exports.deleteMovie = async (req, res) => {

@@ -36,13 +36,7 @@ const structure = [
   {
     id: 3,
     label: "Movie Categories",
-    link: "/app/catagorys",
-    icon: <CategoryIcon />,
-  },
-  {
-    id: 4,
-    label: "Movie SubCategories",
-    link: "/app/subcatagorys",
+    link: "/app/categorys",
     icon: <CategoryIcon />,
   },
 ];

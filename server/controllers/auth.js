@@ -44,4 +44,47 @@ exports.login = async (req, res) => {
     }
 }
 
+exports.editUsers = async (req, res) =>{
+    try {
+        const data =  req.body
+        conn.query(`update users set ? where ID=${data.ID}`, data , (err ,rows) =>{
+            if (err){
+                return res.status(404).json({message: JSON.stringify(err)})
+            }
+            res.status(200).json({message: "Edit successfully !"})
+        })
+    }catch(error){
+        return res.status(404).json({ message: "Edit failed !"})
+    }
+}
+
+exports.deleteUsers = async (req, res) => {
+    try {
+        const {id} = req.params
+        conn.query("delete from users where id=?", id, (err) => {
+            if (err) {
+                return res.status(404).json({ message: "Delete failed !" })
+            }
+            res.status(200).json({ message: "Delete successfully!" })
+        })
+
+    } catch (error) {
+
+        return res.status(404).json({ message: "Delete failed !" })
+    }
+}
+exports.getUsers = async (req, res) => {
+    try {
+
+        conn.query(`SELECT * FROM users `, (err, rows) => {
+            if (!err) {
+                res.send(rows)
+            }
+        })
+
+    } catch (error) {
+
+        return res.status(404).json({ message: "Cannot find films !" })
+    }
+}
 

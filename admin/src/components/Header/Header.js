@@ -8,7 +8,6 @@ import {
 import {
   Menu as MenuIcon,
   Person as AccountIcon,
-  Send as SendIcon,
   ArrowBack as ArrowBackIcon,
 } from "@material-ui/icons";
 import classNames from "classnames";

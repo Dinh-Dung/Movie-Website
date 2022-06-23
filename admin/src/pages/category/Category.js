@@ -2,48 +2,46 @@ import React from "react";
 import PageTitle from "../../components/PageTitle/PageTitle";
 import axios from 'axios'
 import { Modal, message } from 'antd';
-import UserForm from "./components/UserForm";
-import UserTable from "./components/UserTable";
-export default function UserPage() {
-
-
+import CategoryForm from "./components/CategoryForm";
+import CategoryTable from "./components/CategoryTable";
+export default function CategoryPage() {
 
   const [name, setName] = React.useState([])
   React.useEffect(() => {
-    getUsers()
+    getCategory1()
   }, [])
 
-  const getUsers = () => {
-    axios.get('/api/users').then(({ data }) => {
+  const getCategory1 = () => {
+    axios.get('/api/main/category').then(({ data }) => {
       console.log(data)
       setName(data)
     }).catch(console.log)
   }
 
-  const deleteUsers = (id) => {
-    axios.delete(`/api/users/${id}`).then(() => {
+  const deleteCategory = (id) => {
+    axios.delete(`/api/delete/category/${id}`).then(() => {
       // reload data
-      getUsers()
+      getCategory1()
       message.success('Delete Success!')
     }).catch(() => {
       message.error('Delete Error!')
     })
   }
 
-  const editUsers = (users) => {
+  const editCategory = (users) => {
     // show modal edit 
     Modal.confirm({
-      title: 'Edit User',
+      title: 'Edit Category',
       icon: null,
-      content: <UserForm data={users}/>,
+      content: <CategoryForm data={users}/>,
       okText: 'Save',
       centered: true,
       onOk: () => {
         return new Promise((resolve, reject) => {
-          UserForm.getValues()
+          CategoryForm.getValues()
             .then((values) => {
               console.log(values)
-              axios.put('/api/users', {
+              axios.put('/api/category', {
                 ID: users.ID,
                 Name: values.Name,
                 Email: values.Email,
@@ -52,7 +50,7 @@ export default function UserPage() {
                 Phone: (values.Phone),
               }).then(() => {
                 message.success('Edit Success!')
-                getUsers()
+                getCategory1()
                 resolve()
               }).catch(()=>{
                 message.error('Edit Error!')
@@ -69,25 +67,25 @@ export default function UserPage() {
     });
   }
 
-  const addUser = () => {
+  const addCategory = () => {
     Modal.confirm({
-      title: 'Add Users',
+      title: 'Add Category',
       icon: null,
-      content: <UserForm/>,
+      content: <CategoryForm/>,
       okText: 'Save',
       centered: true,
       onOk: () => {
         return new Promise((resolve, reject) => {
-          UserForm.getValues()
+          CategoryForm.getValues()
             .then((values) => {
               console.log(values)
-              axios.post('/auth/signup', {
+              axios.post('/api/new/category', {
                 ...values,
                 Pass: (values.Pass),
                 Phone:(values.Phone),
               }).then(() => {
                 message.success('Add Success!')
-                getUsers()
+                getCategory1()
                 resolve()
               }).catch(()=>{
                 message.error('Add Error!')
@@ -106,9 +104,9 @@ export default function UserPage() {
   
   return (
     <>
-      <PageTitle title="User" /> 
+      <PageTitle title="Category" /> 
       <div className="container">
-        <UserTable handleAdd={addUser} data={name} handleEdit={editUsers} handleDelete={deleteUsers}/>
+        <CategoryTable handleAdd={addCategory} data={name} handleEdit={editCategory} handleDelete={deleteCategory}/>
       </div>
     </>
   );
