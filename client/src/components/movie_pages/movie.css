@@ -29,13 +29,20 @@
 .movie_icon i{
     color: rgb(225, 178, 49);
     font-size: 14px;
+    padding-right: 5px;
 }
 .movie_icon a{
     margin: 0 20px;
     font-size: 14px;
 }
+.movie_icon p{
+    padding-right: 20px;
+}
 .movie_page_text{
     margin-top: 50px;
+}
+.movie_page_text h1{
+    font-size: 38px;
 }
 .movie_page_text button{
     margin-bottom: 20px ;
@@ -46,6 +53,7 @@
 }
 .movie_pg_information p a{
     color: #719dbd !important;
+    text-decoration: none;
 }
 .line_movie{
     border: 1px solid #222;

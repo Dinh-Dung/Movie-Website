@@ -59,14 +59,14 @@ export default function Header() {
     return navcategory.map((category, index) => {
       return (
         <li className={category.SubName ? "nav-item dropdown " :"nav-item" } key={index}>
-          <Link
-          href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-            to={"#"}
+          <div
+           id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            onClick={()=>document.getElementById(index+1).scrollIntoView()}
             className={category.SubName ? "nav-link dropdown-toggle": "nav-link"}
             style={{ color: navColorText }}
           >
             {category.CateName}
-          </Link>
+          </div>
 
           {category.SubName !== null && (
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -96,7 +96,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-light ">
         <a className="navbar-brand" href="#undefine">
           <Link to="/homepage">
-            <Logo />
+            <img src="./images/logonew.png" alt="no img" style={{width:'200px'}}/>
           </Link>
         </a>
         <button

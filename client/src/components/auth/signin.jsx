@@ -3,14 +3,10 @@ import './auth.css'
 import { useNavigate } from "react-router-dom";
 export default function SignIn(props) {
       
-    const shoot = () => {
-        alert("Đăng nhập thành công!");
-      }
 
-        const navigate = useNavigate()
-    
-        const onClick = () => navigate("/signup")
-    
+    const navigate = useNavigate()
+    const onClick = () => navigate("/signup")
+       
 
     return (
         <div className="bg_img" style={{ backgroundImage: `url(/images/anh_nen.jpg)` }}>
@@ -35,7 +31,7 @@ export default function SignIn(props) {
                             placeholder='Password'  
                         />
                     </div>
-                    <button type="submit" className="btn login-button btn-submit btn-small"  onClick={shoot}>
+                    <button type="submit" className="btn login-button btn-submit btn-small">
                     Sign In
                     </button>
                     <div className="form-group form-check">

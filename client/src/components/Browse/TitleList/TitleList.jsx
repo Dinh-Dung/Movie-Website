@@ -4,7 +4,7 @@ import "./TitleList.css";
 import Item from "./Item/Item";
 import '../../../styles/responsive.css'
 
-export default function TitleList({ filmsData,title }) {
+export default function TitleList({ filmsData,title,idNav}) {
   const [films, setFilms] = useState([])
 
 
@@ -20,7 +20,7 @@ export default function TitleList({ filmsData,title }) {
 
   const renderFilms = () => {
     return films.map((value, index) => {
-       if(index <= 5){
+       if(index <= 7){
         return(
           <div className="col-12 col-xl-2dot4 col-md-6 mt-2" key={index} onClick={()=>{onClickHandle(value.ID)}}>
           <Item  data={value} />
@@ -35,12 +35,12 @@ export default function TitleList({ filmsData,title }) {
 
   return (
     <>
-    <div className="titlelist container-fluid">
+    <div className="titlelist container-fluid" id={idNav}>
       <div className=" title">
         <div className="category">
           <h1>{title}</h1>
         </div>
-        <div className="row ">
+        <div className="row " >
           {renderFilms()}
         </div>
       </div>

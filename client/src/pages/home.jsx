@@ -29,7 +29,14 @@ export default function HomePage() {
       setActionFilms(data)
     })()
 }, [])
-
+useEffect(() => {
+  (async () => {
+    // Fetch top anime films
+    const res = await fetch('/api/film/get-top?category=3')
+    const data = await res.json()
+    setRomaticFilms(data)
+  })()
+}, [])
   return (
     <div>
       <header className="Header">
@@ -38,9 +45,9 @@ export default function HomePage() {
       <Banner
 
        />
-      <TitleList filmsData={animeFilms} title="Top Phim Hoạt Hình Anime Hay Nhất"/>
-      <TitleList filmsData={actionFilms} title="Top Phim Hành Động Hay Nhất"/>
-      <TitleList filmsData={romaticFilms} title="Top Phim Tình Cảm Hay Nhất"/>
+      <TitleList filmsData={animeFilms} title="Top Phim Hoạt Hình Anime Hay Nhất"idNav={'1'} />
+      <TitleList filmsData={actionFilms} title="Top Phim Hành Động Hay Nhất" idNav={'2'}/>
+      <TitleList filmsData={romaticFilms} title="Top Phim Tình Cảm Hay Nhất"idNav={'3'}/>
       <Footer />
     </div>
   )

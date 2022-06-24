@@ -1,6 +1,7 @@
 import React from 'react'
 import './Banner.css'
 import { useEffect,useState } from 'react'
+import { useNavigate } from "react-router-dom";
 // import 'antd/dist/antd'
 // import {Rate} from 'antd'
 
@@ -9,14 +10,18 @@ export default function Banner() {
   const[mostView,setMosetView] = useState([])
 
 
-  useEffect(()=>{
-    (async ()=>{
-      const res = await fetch('/api/mostview/film')
-      const data = await res.json()
-      setMosetView(data)
-    })()
-  },[])
-
+      useEffect(()=>{
+        (async ()=>{
+          const res = await fetch('/api/mostview/film')
+          const data = await res.json()
+          setMosetView(data)
+        })()
+      },[])
+      
+      const navigate = useNavigate()
+      const onClickHandle =(id)=>{
+      navigate(`/movie?filmID=${id}`)
+      }
   return (
     mostView.map((value,index)=>(
       <div className="Banner container-fluid" key={index}>
@@ -28,7 +33,7 @@ export default function Banner() {
         <p>Country: {value.Country}</p>
        
           <div className="Button-wrapper">
-            <button className="Button" data-primary="true">
+            <button className="Button" data-primary="true" onClick={()=>{onClickHandle(value.ID)}} >
               Watch Now
             </button>
             <button className="Button" data-primary="false">
