@@ -9,6 +9,7 @@ export default function Movie() {
   const { search } = useLocation();
 
   const navigate = useNavigate();
+  
   const onClickHandle = (id) => {
     navigate(`/movie?filmID=${id}`);
   };

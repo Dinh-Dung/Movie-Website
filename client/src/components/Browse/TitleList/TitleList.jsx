@@ -8,15 +8,15 @@ export default function TitleList({ filmsData,title,idNav}) {
   const [films, setFilms] = useState([])
 
 
-  useEffect (()=>{
-    setFilms(filmsData)
-  },[filmsData])
+    useEffect (()=>{
+      setFilms(filmsData)
+    },[filmsData])
 
 
-  const navigate = useNavigate()
-  const onClickHandle =(id)=>{
-   navigate(`/movie?filmID=${id}`)
-  }
+    const navigate = useNavigate()
+    const onClickHandle =(id)=>{
+    navigate(`/movie?filmID=${id}`)
+    }
 
   const renderFilms = () => {
     return films.map((value, index) => {

@@ -1,20 +1,19 @@
 import React, { useState,useEffect   } from 'react'
 import './UserProfile.css'
-import { useLocation } from "react-router-dom";
+import { useLogin } from '../../contexts/auth';
+import { useNavigate } from "react-router-dom";
 export default function UserProfile() {
 
-    // const [user,setUser]= useState([])
-    // const { search } = useLocation();
+   const navigate = useNavigate()
 
-    // useEffect(()=>{
-    //         (async()=>{
-    //             const res = await fetch(`/api/users/user${search}`)
-    //             const data = await res.json()
-    //             setUser(data)
-    //         })()
-    // })
+   const {user}= useLogin()
+     useEffect(()=>{
+       if(!user)
+       navigate('/signin')
+     },[user])
+
   return (
-    // user.map((val,ind)=>(
+    
         <section className="userProfile">
         <div className="container">
             <div className="row">
@@ -25,9 +24,9 @@ export default function UserProfile() {
                     <div className="description">
                     <h2 className="description_title"><i className="bi bi-card-list"></i> Information</h2>
                    <div className="info">
-                   <div className="fullName"><i className="bi bi-person-circle"></i>Vương Thành Đạt</div>
-                    <div className="phone_number"><i className="bi bi-telephone-fill"></i>0333717962</div>
-                    <div className="gmail"><i className="bi bi-envelope-fill"></i>vuongthanhdat2703@gmail.com</div>
+                   <div className="fullName"><i className="bi bi-person-circle"></i> {user?.Name ? user.Name : ' '}</div>
+                    <div className="phone_number"><i className="bi bi-telephone-fill"></i> {user?.Phone ? user.Phone : ' '}</div>
+                    <div className="gmail"><i className="bi bi-envelope-fill"></i> {user?.Email ? user.Email : ' '}</div>
                    </div>
                     </div>
                 </div>
