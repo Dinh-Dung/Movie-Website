@@ -34,7 +34,11 @@ function Login(props) {
   var [activeTabId, setActiveTabId] = useState(0);
   var [nameValue, setNameValue] = useState("");
   var [loginValue, setLoginValue] = useState("admin@flatlogic.com");
+<<<<<<< HEAD
   var [passwordValue, setPasswordValue] = useState("password");
+=======
+  var [passwordValue, setPasswordValue] = useState("123456");
+>>>>>>> 7ffb63bf5c18ae7f7259d3421a7ae6de619b0ad0
 
   return (
     <Grid container className={classes.container}>
@@ -232,9 +236,12 @@ function Login(props) {
             </React.Fragment>
           )}
         </div>
+<<<<<<< HEAD
         <Typography color="primary" className={classes.copyright}>
         © 2014-{new Date().getFullYear()} <a style={{ textDecoration: 'none', color: 'inherit' }} href="https://flatlogic.com" rel="noopener noreferrer" target="_blank">Flatlogic</a>, LLC. All rights reserved.
         </Typography>
+=======
+>>>>>>> 7ffb63bf5c18ae7f7259d3421a7ae6de619b0ad0
       </div>
     </Grid>
   );
